@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import Achievements from './components/Achievements';
 import Gallery from './components/Gallery';
+import PhotoCarousel from './components/PhotoCarousel';
 import Schedule from './components/Schedule';
 import Testimonials from './components/Testimonials';
 import Signup from './components/Signup';
@@ -14,12 +15,13 @@ export default function App() {
     <div style={{ background: 'var(--gla-dark)', minHeight: '100vh' }}>
       <Navbar />
       <Hero />
-      <Benefits />
-      <Achievements />
-      <Gallery />
-      <Schedule />
-      <Testimonials />
-      <Signup />
+      {/* <Benefits /> */}
+      {/* <Achievements /> */}
+      {/* <Gallery /> */}
+      <PhotoCarousel />
+      {/* <Schedule /> */}
+      {/* <Testimonials /> */}
+      {/* <Signup /> */}
       <Footer />
     </div>
   );

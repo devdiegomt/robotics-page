@@ -174,7 +174,7 @@ export default function Achievements() {
       </div>
 
       <style>{`
-        @media (max-width: 768px) {
+        @media (max-width: 859px) {
           #achievements .timeline-item {
             grid-template-columns: 40px 1fr !important;
           }

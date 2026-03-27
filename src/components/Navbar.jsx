@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 
 const navLinks = [
   { label: 'Inicio', href: '#hero' },
-  { label: 'Beneficios', href: '#benefits' },
-  { label: 'Logros', href: '#achievements' },
-  { label: 'Proyectos', href: '#gallery' },
-  { label: 'Cronograma', href: '#schedule' },
-  { label: 'Testimonios', href: '#testimonials' },
-  { label: 'Inscríbete', href: '#signup', cta: true },
+  /* { label: 'Beneficios', href: '#benefits' }, */
+  /* { label: 'Logros', href: '#achievements' }, */
+  /* { label: 'Proyectos', href: '#gallery' }, */
+  { label: 'Galería', href: '#gallery-carousel' },
+  /* { label: 'Cronograma', href: '#schedule' }, */
+  /* { label: 'Testimonios', href: '#testimonials' }, */
+  /* { label: 'Inscríbete', href: '#signup', cta: true }, */
 ];
 
 export default function Navbar() {
@@ -36,24 +37,7 @@ export default function Navbar() {
     }}>
       {/* Logo */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        <div style={{
-          width: 38, height: 38,
-          background: 'var(--gla-blue)',
-          borderRadius: 8,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontFamily: 'var(--font-display)',
-          fontWeight: 800,
-          fontSize: 14,
-          letterSpacing: 1,
-        }}>GLA</div>
-        <div>
-          <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 15, lineHeight: 1 }}>
-            Robotics Club
-          </div>
-          <div style={{ fontSize: 10, color: 'var(--gla-orange)', fontFamily: 'var(--font-mono)', letterSpacing: 2, textTransform: 'uppercase' }}>
-            Los Arrayanes
-          </div>
-        </div>
+        <img src="/images/logo.png" alt="" width="130px" />
       </div>
 
       {/* Desktop Nav */}
@@ -70,14 +54,14 @@ export default function Navbar() {
             transition: 'all 0.2s ease',
             letterSpacing: 0.3,
           }}
-          onMouseEnter={e => {
-            if (!link.cta) e.target.style.color = 'white';
-            if (!link.cta) e.target.style.background = 'rgba(0,87,168,0.2)';
-          }}
-          onMouseLeave={e => {
-            if (!link.cta) e.target.style.color = 'rgba(255,255,255,0.75)';
-            if (!link.cta) e.target.style.background = 'transparent';
-          }}
+            onMouseEnter={e => {
+              if (!link.cta) e.target.style.color = 'white';
+              if (!link.cta) e.target.style.background = 'rgba(0,87,168,0.2)';
+            }}
+            onMouseLeave={e => {
+              if (!link.cta) e.target.style.color = 'rgba(255,255,255,0.75)';
+              if (!link.cta) e.target.style.background = 'transparent';
+            }}
           >
             {link.label}
           </a>
@@ -92,8 +76,8 @@ export default function Navbar() {
       }} className="hamburger">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           {menuOpen
-            ? <><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></>
-            : <><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></>
+            ? <><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></>
+            : <><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" /></>
           }
         </svg>
       </button>
@@ -125,7 +109,7 @@ export default function Navbar() {
       )}
 
       <style>{`
-        @media (max-width: 768px) {
+        @media (max-width: 859px) {
           .desktop-nav { display: none !important; }
           .hamburger { display: flex !important; }
         }

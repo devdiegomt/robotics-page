@@ -12,35 +12,25 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 20 }}>
-              <div style={{
-                width: 44, height: 44,
-                background: 'var(--gla-blue)',
-                borderRadius: 10,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 16,
-              }}>GLA</div>
-              <div>
-                <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 16 }}>Robotics Club</div>
-                <div style={{ fontSize: 11, color: 'var(--gla-orange)', fontFamily: 'var(--font-mono)', letterSpacing: 1.5, textTransform: 'uppercase' }}>Los Arrayanes</div>
-              </div>
+              <img src="/images/logo.png" alt="" width="130px" />
             </div>
             <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.4)', lineHeight: 1.7, maxWidth: 280 }}>
               Formando a los ingenieros, programadores y líderes tecnológicos del mañana desde las aulas del Gimnasio Los Arrayanes Bilingüe.
             </p>
           </div>
 
-          {/* Quick links */}
-          <div>
+          {/* Quick links */} {/* Agregar quick links más adelante */}
+          {/* <div>
             <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 14, marginBottom: 20, color: 'rgba(255,255,255,0.8)' }}>
               Explorar
             </div>
             {['Beneficios', 'Proyectos', 'Cronograma', 'Testimonios', 'Inscríbete'].map(l => (
               <a key={l} href={`#${l.toLowerCase().replace('í', 'i')}`} style={{ display: 'block', fontSize: 14, color: 'rgba(255,255,255,0.4)', textDecoration: 'none', marginBottom: 10, transition: 'color 0.2s' }}
-              onMouseEnter={e => e.target.style.color = 'white'}
-              onMouseLeave={e => e.target.style.color = 'rgba(255,255,255,0.4)'}
+                onMouseEnter={e => e.target.style.color = 'white'}
+                onMouseLeave={e => e.target.style.color = 'rgba(255,255,255,0.4)'}
               >{l}</a>
             ))}
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>
@@ -50,8 +40,8 @@ export default function Footer() {
             <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', lineHeight: 1.8 }}>
               <div>📍 Cl. 219 No 50-10</div>
               <div>Bogotá, Colombia</div>
-              <div style={{ marginTop: 10 }}>📞 317 644 1202</div>
-              <div>✉️ robotics@gla.edu.co</div>
+              {/* <div style={{ marginTop: 10 }}>📞 317 644 1202</div> */} {/* Si se quiere agregar un número de cel */}
+              <div>✉️ informatica@gla.edu.co</div>
             </div>
           </div>
 
@@ -71,10 +61,10 @@ export default function Footer() {
               marginBottom: 12,
               transition: 'all 0.2s ease',
             }}
-            onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--gla-blue)'; e.currentTarget.style.color = 'white'; }}
-            onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,87,168,0.3)'; e.currentTarget.style.color = 'rgba(255,255,255,0.7)'; }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--gla-blue)'; e.currentTarget.style.color = 'white'; }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,87,168,0.3)'; e.currentTarget.style.color = 'rgba(255,255,255,0.7)'; }}
             >
-              <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" /></svg>
               gla.edu.co
             </a>
             <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)', lineHeight: 1.6 }}>
@@ -91,10 +81,10 @@ export default function Footer() {
           flexWrap: 'wrap', gap: 12,
         }}>
           <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.25)' }}>
-            © 2025 Club de Robótica GLA · Gimnasio Los Arrayanes Bilingüe · Todos los derechos reservados
+            © 2026 Club de Robótica GLA · Gimnasio Los Arrayanes Bilingüe · Todos los derechos reservados
           </div>
           <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'rgba(255,255,255,0.2)' }}>
-            v1.0.0 · Built with ❤️ by GLA Dev Team
+            v1.0.0 · Built with ❤️ by <a href="https://devdiegomt.vercel.app" target='_blank'>Diego Mayorga</a>
           </div>
         </div>
       </div>

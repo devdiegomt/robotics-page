@@ -168,25 +168,6 @@ export default function Gallery() {
             </div>
           ))}
         </div>
-
-        {/* Add your content note */}
-        <div style={{
-          marginTop: 48,
-          padding: '24px 32px',
-          background: 'rgba(0,87,168,0.08)',
-          border: '1px dashed rgba(0,87,168,0.3)',
-          borderRadius: 16,
-          display: 'flex', alignItems: 'center', gap: 16,
-          textAlign: 'left',
-        }}>
-          <div style={{ fontSize: 28, flexShrink: 0 }}>📸</div>
-          <div>
-            <div style={{ fontWeight: 700, marginBottom: 4 }}>¿Tienes fotos o videos reales del club?</div>
-            <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.5)' }}>
-              Reemplaza estos proyectos con imágenes reales importando tus archivos en <code style={{ fontFamily: 'var(--font-mono)', color: 'var(--gla-orange)' }}>src/assets/</code> o usando un CDN como Cloudinary.
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -166,10 +166,10 @@ export default function Schedule() {
             }}>
               <div style={{ fontSize: 32, marginBottom: 12 }}>📍</div>
               <h4 style={{ fontFamily: 'var(--font-display)', fontSize: 18, fontWeight: 700, marginBottom: 8 }}>
-                Ubicación del Club
+                Ubicación de la Extracurricular
               </h4>
               <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)', lineHeight: 1.6, marginBottom: 16 }}>
-                Laboratorio de Tecnología — Bloque STEM<br />
+                Salón de Robótica - LEGO<br />
                 Gimnasio Los Arrayanes Bilingüe<br />
                 Cl. 219 No 50-10, Bogotá
               </p>

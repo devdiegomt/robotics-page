@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function GridBackground() {
   return (
@@ -178,7 +178,7 @@ export default function Hero() {
           }}>
             <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#22c55e', animation: 'blink 1.5s infinite' }} />
             <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'rgba(255,255,255,0.7)', letterSpacing: 1.5 }}>
-              INSCRIPCIONES ABIERTAS 2025
+              INSCRIPCIONES ABIERTAS 2026
             </span>
           </div>
 
@@ -227,8 +227,8 @@ export default function Hero() {
             Diseña robots, programa con IA y compite a nivel nacional.
           </p>
 
-          {/* CTAs */}
-          <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+          {/* CTAs */} {/* Pendiente modificar */}
+          {/* <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
             <a href="#signup" style={{
               display: 'inline-flex', alignItems: 'center', gap: 10,
               background: 'var(--gla-orange)',
@@ -265,10 +265,10 @@ export default function Hero() {
               Descubrir más
               <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
             </a>
-          </div>
+          </div> */}
 
-          {/* Stats */}
-          <div style={{ display: 'flex', gap: 40, marginTop: 52 }}>
+          {/* Stats */} {/* Pendiente para hacer después */}
+          {/* <div style={{ display: 'flex', gap: 40, marginTop: 52 }}>
             {[
               { num: '50+', label: 'Estudiantes activos' },
               { num: '3', label: 'Competencias ganadas' },
@@ -283,7 +283,7 @@ export default function Hero() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Right: Robot illustration */}
@@ -302,8 +302,8 @@ export default function Hero() {
             }} />
             <RobotIcon />
 
-            {/* Floating info cards */}
-            <div style={{
+            {/* Floating info cards */} {/* Si se quiere agregar otro info card, queda aquí */}
+            {/* <div style={{
               position: 'absolute', top: -20, right: -80,
               background: 'rgba(255,255,255,0.05)',
               backdropFilter: 'blur(20px)',
@@ -316,7 +316,7 @@ export default function Hero() {
                 {'>'} STEM Score
               </div>
               <div style={{ fontFamily: 'var(--font-display)', fontSize: 22, fontWeight: 700 }}>98%</div>
-            </div>
+            </div> */}
 
             <div style={{
               position: 'absolute', bottom: 10, left: -90,
@@ -352,7 +352,7 @@ export default function Hero() {
       </div>
 
       <style>{`
-        @media (max-width: 768px) {
+        @media (max-width: 859px) {
           #hero > div > div:first-child { grid-column: 1 / -1; }
           #hero > div > div:last-child { display: none; }
           #hero > div { grid-template-columns: 1fr !important; }
